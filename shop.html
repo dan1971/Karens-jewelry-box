@@ -11,31 +11,29 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" rel="stylesheet"> 
 </head>
 <body>
-    <!-- <div class="top-banner">
-        25% off sitewide with code <strong>21YEARS</strong>, exclusions apply
-    </div> -->
-
-
     <div class="page-container">
-
         <nav class="main-nav">
         <div class="header-logo-div">
-            <h1>Karen's Jewelry Box</h1>
+            <div class="logo-sup"><h1>Karen's Jewelry</h1></div>
+            <div class="logo-sub">
+            <h1>B<sup>ox</sup></h1>
+            </div>
         </div>
             <ul>
-                <li><a href="#">SHOP</a></li>
-                <li><a href="#">NEW</a></li>
-                <li><a href="#">GIFTS</a></li>
-                <li><a href="#">COLLECTIONS</a></li>
-                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#" id="style-2" data-replace="SHOP"><span>SHOP</span></a></li>
+                <li><a href="#" id="style-2" data-replace="NEW"><span>NEW</span></a></li>
+                <li><a href="#" id="style-2" data-replace="GIFT"><span>GIFT</span></a></li>
+                <li><a href="#" id="style-2" data-replace="COLLECTIONS"><span>COLLECTIONS</span></a></li>
+                <li><a href="#" id="style-2" data-replace="ABOUT"><span>ABOUT</span></a></li>
             </ul>
             <!-- <div class="logo">
                 
                 <img src="./images/logo.png" alt="KAREN Jewelry Logo">
             </div> -->
-            <div class="nav-icons">
+            <div class="cart-icons">
                 <!-- Removed SEARCH menu item -->
                 <!-- <a href="#"><span class="icon-account"></span>ACCOUNT</a> -->
                 <a href="#">
@@ -56,17 +54,15 @@
                 </a>
             </div>
         </nav>
-    </header>
-    <div class="main-container">
-    
-    <section class="hero">
-    
+        
+        <div class="main-container">
+<h1 class="title">Handmade Jewelry Collection</h1>
 
-<!-- <div class="card-grid">
+<div class="card-grid">
 
-    ========================= -->
+    <!-- ========================= -->
     <!--         RINGS             -->
-    <!-- =========================
+    <!-- ========================= -->
 
     <div class="card">
         <img src="images/b-ring001.webp" alt="Pearl Burst Gold">
@@ -122,11 +118,11 @@
         <p>Whimsical butterfly shapes with soft pink and yellow accents create a charming vintage look. Light, playful, and perfect for nature lovers.</p>
     </div>
 
-    Continue with all remaining rings…
+    <!-- Continue with all remaining rings… -->
 
-    ========================= -->
-    <!--  PENDANTS, EARRINGS, ETC 
-    =========================
+    <!-- ========================= -->
+    <!--  PENDANTS, EARRINGS, ETC  -->
+    <!-- ========================= -->
 
     <div class="card">
         <img src="images/white-stone-wire-pendant.webp" alt="White Stone Wire Pendant">
@@ -200,145 +196,36 @@
         <p>A one-of-a-kind shell wrapped in textured gold wire. Beachy, artistic, and beautiful.</p>
     </div>
 
-</div>  -->
+</div> <!-- END GRID -->
+        </div>
+        <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <!-- Optional: Add your logo here -->
+                <!-- <img src="./images/logo.png" alt="KAREN Jewelry Logo"> -->
+               
+            </div>
+            <div class="footer-links">
+                <a href="#">SHOP</a>
+                <a href="#">NEW</a>
+                <a href="#">GIFTS</a>
+                <a href="#">COLLECTIONS</a>
+                <a href="#">ABOUT ME</a>
+            </div>
+            <div class="footer-social">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+            </div>
+            <div class="footer-logo">
+                 <h1>Jewelry <span class="by">by</span> Karen</h1>
+                <div class="footer-copy">&copy; 2026 All rights reserved.</div>
+            </div>
 
-<!-- END GRID -->
-
-<!--<div class="card-div">
-                <div class="card">
-                    <div class="cover item-a">
-                    <h2>Golden<br>Chime</h2>
-                        <span class="price">$120</span>
-                        <div class="card-back item-a-back">
-                            <a href="#">Add to cart</a>
-                            <a href="#" class="card-selector" data-id="item-b">View detail</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="cover item-b">
-                    <h2>Earrings<br>A-Gogo</h2>
-                        <span class="price">$115</span>
-                        <div class="card-back item-b-back">
-                            <div class="detail-shade">
-                                <div class="product-description">
-                                    <h3>Description</h3>
-                                    <p>Each windchime is lovingly handcrafted with attention to every delicate detail, featuring carefully selected crystals
-                                        and charms that catch the light and dance in the breeze.</p>
-                                    <ul class="product-specs">
-                                        <li>Length - 36in</li>
-                                        <li>Materials - Glass beads, copper wire, natural wood</li>
-                                    </ul>
-                                    </div>
-                            </div>
-                            <a class="add-to-cart" href="#">Add to cart</a>
-                            <a class="card-selector" data-id="item-b">View detail</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="cover item-c">
-                    <h2>Chime<br>Magic</h2>
-                        <span class="price">$79</span>
-                        <div class="card-back">
-                            <a href="#">Add to cart</a>
-                            <a href="#">View detail</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="cover item-a">
-                    <h2>Chime<br>Magic</h2>
-                        <span class="price">$79</span>
-                        <div class="card-back">
-                            <a href="#">Add to cart</a>
-                            <a href="#">View detail</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="cover item-b">
-                    <h2>Chime<br>Magic</h2>
-                        <span class="price">$79</span>
-                        <div class="card-back">
-                            <a href="#">Add to cart</a>
-                            <a href="#">View detail</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="cover item-c">
-                    <h2>Chime<br>Magic</h2>
-                        <span class="price">$79</span>
-                        <div class="card-back">
-                            <a href="#">Add to cart</a>
-                            <a href="#">View detail</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="cover item-a">
-                    <h2>Chime<br>Magic</h2>
-                        <span class="price">$79</span>
-                        <div class="card-back">
-                            <a href="#">Add to cart</a>
-                            <a href="#">View detail</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="cover item-b">
-                    <h2>Chime<br>Magic</h2>
-                        <span class="price">$79</span>
-                        <div class="card-back">
-                            <a href="#">Add to cart</a>
-                            <a href="#">View detail</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="cover item-c">
-                    <h2>Chime<br>Magic</h2>
-                        <span class="price">$79</span>
-                        <div class="card-back">
-                            <a href="#">Add to cart</a>
-                            <a href="#">View detail</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="cover item-a">
-                    <h2>Chime<br>Magic</h2>
-                        <span class="price">$79</span>
-                        <div class="card-back">
-                            <a href="#">Add to cart</a>
-                            <a href="#">View detail</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="cover item-b">
-                    <h2>Chime<br>Magic</h2>
-                        <span class="price">$79</span>
-                        <div class="card-back">
-                            <a href="#">Add to cart</a>
-                            <a href="#">View detail</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="cover item-c">
-                    <h2>Chime<br>Magic</h2>
-                        <span class="price">$79</span>
-                        <div class="card-back">
-                            <a href="#">Add to cart</a>
-                            <a href="#">View detail</a>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-    </section> 
-    </main>
+        </div>
+    </footer>
+        
     </div>
 </body>
 <!-- <script
