@@ -351,9 +351,21 @@ header {
     align-items: center;
     justify-content: start;
     color: #e5e5e5;
-    backdrop-filter: blur(3px) hue-rotate(182deg);
-    -webkit-backdrop-filter: blur(3px) hue-rotate(182deg);
     background: rgba(248, 248, 248, 0.4);
+    padding: 3rem 3rem 3rem 3rem;
+    
+        & h1{
+            font-family:'heading-h1';
+            font-size: 4rem;
+            letter-spacing: .5rem;
+
+        }
+}
+
+.hero::after {
+    background: url('../images/desert-001.webp');
+    filter: blur(4px) sepia(.6);
+    -webkit-filter: blur(4px) sepia(.6);
 }
 
 .card-div {
