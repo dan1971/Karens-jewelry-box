@@ -20,7 +20,6 @@ svg {
 
 }
 
-
 button {
     font-size: 100%;
     line-height: 1.15;
@@ -92,6 +91,50 @@ font-size: 1.5rem;
     font-family: 'Delius Swash Caps', cursive;
     color: var(--secondary-color)
 }
+
+/* MASK EFFECT */
+
+/* CSS */
+.svg-button {
+  background-color: #333333;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.svg-button:hover {
+  background-color: #333333;
+}
+
+.svg-path {
+  transition: stroke-width 0.5s;
+}
+
+.svg-button:hover .svg-path {
+  stroke:#fff;
+  stroke-width: .75;
+}
+
+/* CSS */
+@keyframes draw {
+  0% {
+    stroke-dashoffset: 100;
+  }
+  100% {
+    stroke-dashoffset: 7;
+  }
+}
+
+.svg-path {
+  stroke-dasharray: 110;
+  stroke-dashoffset: 0; 
+}
+
+.svg-button:hover .svg-path {
+  animation: draw 1000ms ease-in forwards;
+}
+
+/**/
 
 .main-nav ul {
     display: flex;
