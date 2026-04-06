@@ -15,9 +15,10 @@ body {
   --menu-top-hover: #03f7ff;
 }
 
-svg {
+.main-nav svg {
   overflow: visible;
-
+  width:34px;
+  height:26px;
 }
 
 button {
@@ -99,46 +100,101 @@ font-size: 1.5rem;
   background-color: #333333;
   border: none;
   cursor: pointer;
-  transition: background-color 0.3s;
+  position:relative;
+  /* transition: background-color 0.3s; */
 }
 
-.svg-button:hover {
-  background-color: #333333;
+.svg-button svg {
+    position: absolute;
+    left: -19px;
+    rotate: 357deg;
+    bottom: 22px;
 }
 
-.svg-path {
-  transition: stroke-width 0.5s;
+.svg-button path{
+ stroke-width: .05px;
+  transition: stroke-width 1500ms ease-out forwards;
+}  
+
+.svg-button:hover path{
+  stroke-width: 1px;
+  animation: draw 1500ms ease-out forwards;
+stroke: #fff;
+} 
+
+/* .svg-button:hover #svg-path-1{
+  animation: draw 1000ms ease-in forwards;
 }
 
-.svg-button:hover .svg-path {
-  stroke:#fff;
-  stroke-width: .75;
-}
 
 /* CSS */
 @keyframes draw {
-  0% {
-    stroke-dashoffset: 100;
-  }
-  100% {
-    stroke-dashoffset: 7;
-  }
+to{
+  stroke-dashoffset: 0;
+}
 }
 
-.svg-path {
+#svg-path-1{
+  stroke-dasharray: 6;
+  stroke-dashoffset: 6;  
+}
+
+#svg-path-2{
+  stroke-dasharray: 139;
+  stroke-dashoffset: 139;  
+}
+
+#svg-path-3{
+  stroke-dasharray: 17;
+  stroke-dashoffset: 17;  
+}
+
+#svg-path-4{
+  stroke-dasharray: 23;
+  stroke-dashoffset: 23;  
+}
+#svg-path-5{
+  stroke-dasharray: 32;
+  stroke-dashoffset: 32;  
+}
+#svg-path-6{
+  stroke-dasharray: 7;
+  stroke-dashoffset: 7;  
+}
+#svg-path-7{
+  stroke-dasharray: 7;
+  stroke-dashoffset: 7;  
+}
+#svg-path-8{
+  stroke-dasharray: 7;
+  stroke-dashoffset: 7;  
+}
+#svg-path-9{
+  stroke-dasharray: 7;
+  stroke-dashoffset: 7;  
+}
+#svg-path-10{
+  stroke-dasharray:7;
+  stroke-dashoffset: 7;  
+}
+#svg-path-11{
+  stroke-dasharray: 7;
+  stroke-dashoffset: 7;  
+}
+
+
+/* .svg-path {
   stroke-dasharray: 110;
   stroke-dashoffset: 0; 
-}
+} */
 
-.svg-button:hover .svg-path {
-  animation: draw 1000ms ease-in forwards;
-}
+
 
 /**/
 
 .main-nav ul {
     display: flex;
-    gap: 42px;
+    gap: 22px;
     list-style: none;
     margin: 0;
     padding: 19px 0 0;
@@ -187,22 +243,23 @@ font-size: 1.5rem;
   color: #ffffff;
 }
 
-.main-nav ul li a:hover::before {
+/* .main-nav ul li a:hover::before {
   transform-origin: 0% 50%;
   transform: scaleX(1);
 }
 .main-nav ul li a:hover::after {
   transform: translate3d(0, 0, 0);
-}
+} */
 
 .main-nav ul li a span {
+  margin-left: 3px;
   display: inline-block;
   transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
 }
 
-.main-nav ul li a:hover span {
+/* .main-nav ul li a:hover span {
   transform: translate3d(-200%, 0, 0);
-}
+} */
 
 nac-icons 
 /* <<<< end >>>> */
